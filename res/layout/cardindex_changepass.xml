@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cardindex_changepass_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cardindex_changepass_tv1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cardindex_changepass_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/cardindex_changepass_tv1"
+        android:layout_below="@+id/cardindex_changepass_tv1"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cardindex_changepass_tv2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/cardindex_changepass_oldPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_unselected"
+        android:layout_above="@+id/cardindex_changepass_tv2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_changepass_tv1"
+        android:ems="10"
+        android:inputType="textPassword" 
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/cardindex_changepass_newPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_unselected"
+        android:layout_alignBottom="@+id/cardindex_changepass_tv2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_changepass_tv2"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge"  />
+
+    <EditText
+        android:id="@+id/cardindex_changepass_repeatPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_unselected"
+        android:layout_alignBottom="@+id/cardindex_changepass_tv3"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_changepass_tv3"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cardindex_changepass_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/cardindex_changepass_tv2"
+        android:layout_below="@+id/cardindex_changepass_tv2"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cardindex_changepass_tv3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/cardindex_changepass_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/cardindex_changepass_tv3"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/cardindex_changepass_tv3"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button"
+        android:text=" 提 交 " />
+
+    <Button
+        android:id="@+id/cardindex_changepass_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardindex_changepass_submit"
+        android:layout_alignBottom="@+id/cardindex_changepass_submit"
+        android:layout_alignLeft="@+id/cardindex_changepass_repeatPass"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button"
+        android:text=" 取 消 " />
+
+    <View
+        android:id="@+id/cardindex_changepass_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/cardindex_changepass_pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
+
+
+
+

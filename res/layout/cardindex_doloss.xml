@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cardindex_doloss_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="请输入密码以进行挂失操作"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cardindex_doloss_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cardindex_doloss_tv1"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text=" 密 码 ："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/cardindex_doloss_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_unselected"
+        android:layout_alignBottom="@+id/cardindex_doloss_tv2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_doloss_tv2"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/cardindex_doloss_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardindex_doloss_tv2"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/cardindex_doloss_pass"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:text=" 确 定 " />
+
+    <Button
+        android:id="@+id/cardindex_doloss_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardindex_doloss_submit"
+        android:layout_alignBottom="@+id/cardindex_doloss_submit"
+        android:layout_alignLeft="@+id/cardindex_doloss_pass"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button"
+        android:text=" 取 消 " />
+    
+    <View
+        android:id="@+id/cardindex_doloss_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardindex_doloss_tv1"
+        android:visibility="gone"
+        android:background="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/cardindex_doloss_pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/cardindex_doloss_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="您的卡片已经挂失！"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

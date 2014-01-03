@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_unselected"
+    android:scrollbars="none" 
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv1"
+		        android:layout_below="@+id/cardindex_userinfo_account"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv2"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_account"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="50dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv1"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_sno"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/cardindex_userinfo_account"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv2"
+		        android:text=""
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_idnumber"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/cardindex_userinfo_name"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv4"
+		        android:text=""
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_pidname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/cardindex_userinfo_idnumber"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv5"
+		        android:text=""
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_iddept"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/cardindex_userinfo_pidname"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv6"
+		        android:text=""
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_peoplename"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/cardindex_userinfo_iddept"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv7"
+		        android:text=""
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_cardId"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/cardindex_userinfo_sexname"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv9"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_sexname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/cardindex_userinfo_peoplename"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv8"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv2"
+		        android:layout_below="@+id/cardindex_userinfo_sno"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv3"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/cardindex_userinfo_sno"
+		        android:layout_toRightOf="@+id/cardindex_userinfo_tv3"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv3"
+		        android:layout_below="@+id/cardindex_userinfo_name"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv4"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv4"
+		        android:layout_below="@+id/cardindex_userinfo_idnumber"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv5"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv5"
+		        android:layout_below="@+id/cardindex_userinfo_pidname"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv6"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv6"
+		        android:layout_below="@+id/cardindex_userinfo_iddept"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv7"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv1"
+		        android:layout_below="@+id/cardindex_userinfo_peoplename"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv8"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/cardindex_userinfo_sexname"
+		        android:layout_alignRight="@+id/cardindex_userinfo_tv1"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv9"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		    <TextView
+		        android:id="@+id/cardindex_userinfo_tv1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/cardindex_userinfo_account"
+		        android:layout_alignBottom="@+id/cardindex_userinfo_account"
+		        android:layout_alignParentLeft="true"
+		        android:gravity="center_horizontal"
+		        android:text="@string/cardindex_userinfo_tv1"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</RelativeLayout>
+
+</ScrollView>

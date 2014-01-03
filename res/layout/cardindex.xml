@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/cardindex_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cardindex_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/cardindex_tv1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cardindex_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardindex_tv1"
+        android:layout_alignBottom="@+id/cardindex_tv1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_tv1"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cardindex_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardindex_tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/cardindex_tv2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cardindex_sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardindex_tv2"
+        android:layout_alignBottom="@+id/cardindex_tv2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/cardindex_tv2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/cardindex_goback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:padding="7dp"
+        android:text=" 返 回 "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guidePages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardindex_goback"
+        android:layout_below="@+id/cardindex_photo" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/guidePages"
+        android:layout_below="@+id/cardindex_photo"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cardindex_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selected"
+            android:text="详细信息" 
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cardindex_changePass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_unselected"
+            android:text="密码修改" 
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cardindex_queryBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_unselected"
+            android:text="消费查询" 
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cardindex_lossReport"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_unselected"
+            android:text="卡片挂失"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cardindex_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:padding="7dp"
+        android:text="@string/cardindex_tv3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cardindex_photo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/guidePages"
+        android:layout_below="@+id/cardindex_logout"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/cardindex_photo"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    tools:context=".MainActivity" >   <!-- 自己图标 -->
+
+<com.wirelessuda.layout.GalleryFlow
+ 
+    android:id="@+id/Gallery01"
+ 
+    android:layout_width="fill_parent"
+ 
+    android:layout_height="wrap_content" android:layout_centerInParent="false"/>   <!-- 自己写的gallery控件，加载到xml文件中 -->
+
+        <ImageButton
+            android:id="@+id/imageButtonWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonSettings"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/imageButtonNews"
+            android:src="@drawable/weather" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButtonBus"
+            android:layout_below="@+id/imageButtonBus"
+            android:layout_marginTop="122dp"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButtonBus"
+            android:layout_below="@+id/imageButtonBus"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButtonCalendar"
+            android:layout_toLeftOf="@+id/imageButtonWeather"
+            android:src="@drawable/gateway" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButtonWeather"
+            android:layout_alignTop="@+id/imageButtonGateway"
+            android:src="@drawable/card" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonSettings"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/imageButtonBus"
+            android:src="@drawable/news" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Gallery01"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/bus" />
+
+       <ImageButton
+        android:id="@+id/imageButtonNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonSettings"
+        android:layout_toLeftOf="@+id/imageButtonWeather"
+        android:src="@drawable/news" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonNotice"
+        android:layout_below="@+id/imageButtonNotice"
+        android:text="校内通知" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonBus"
+        android:layout_below="@+id/imageButtonBus"
+        android:text="校车路线" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonNews"
+        android:layout_below="@+id/imageButtonNews"
+        android:text="学校新闻" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonWeather"
+        android:layout_below="@+id/imageButtonWeather"
+        android:text="天气讯息" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonGateway"
+        android:layout_below="@+id/imageButtonGateway"
+        android:text="网关登录" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/imageButtonCard"
+        android:text="一卡通服务" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/imageButtonSettings"
+        android:text="系统设置" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonCalendar"
+        android:layout_below="@+id/imageButtonCalendar"
+        android:text="苏大校历" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wirelessuda"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true"
+     	android:name=".activity.CardApplication"
+        >
+
+        
+      <!--      android:name="com.wirelessuda.activity.WelcomeActivity"
+            android:label="@string/app_name"  --> 
+        <activity
+        	android:name="com.wirelessuda.activity.MainActivity"
+            android:label="@string/title_activity_welcome"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主activity -->
+
+    <!--<activity android:name="com.wirelessuda.activity.FirstStartActivity" >
+        </activity>-->   
+        <!-- 每写个activity都要注册下 
+        <activity
+            android:name="com.wirelessuda.activity.MainActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>-->
+        <activity
+            android:name="com.wirelessuda.activity.NewsindexActivity"
+            android:label="@string/title_activity_main_tab" >
+        </activity>
+        <activity
+            android:name="com.wirelessuda.activity.BusActivity"
+            android:label="@string/title_activity_bus" >
+        </activity>
+        <activity
+            android:name="com.wirelessuda.activity.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        
+        <!-- 苏大一卡通 -->
+        <activity
+            android:name="com.wirelessuda.activity.CardActivity"
+            android:label="@string/title_activity_card" >
+        </activity> 
+        <activity
+            android:name="com.wirelessuda.activity.CardindexActivity"
+            android:label="@string/title_activity_cardindex" >
+        </activity> 
+        <activity android:name="com.wirelessuda.activity.Cardindex_userinfo"/>
+        <activity android:name="com.wirelessuda.activity.Cardindex_changepass"/>
+        <activity android:name="com.wirelessuda.activity.Cardindex_doloss"/>
+        <activity android:name="com.wirelessuda.activity.Cardindex_querybalance"/> 
+        
+        <!-- 苏大新闻 -->
+        <activity
+            android:name="com.wirelessuda.activity.NewsItemActivity">
+        </activity>
+        <activity android:name="com.wirelessuda.activity.ReadNews2Activity" />
+        <activity android:name="com.wirelessuda.activity.ReadNews3Activity" />
+        <activity android:name="com.wirelessuda.activity.ReadNews4Activity" />
+        <activity android:name="com.wirelessuda.activity.ReadNews5Activity" />
+        <activity
+            android:name="com.wirelessuda.activity.Newsindex_WebView">
+        </activity>
+        
+        <!-- 苏大通知 -->
+        <activity
+            android:name="com.wirelessuda.activity.Noticeindex_WebView">
+        </activity>
+        <activity android:name="com.wirelessuda.activity.NoticeindexActivity" />
+        <activity
+            android:name="com.wirelessuda.activity.GatewayActivity"
+            android:label="@string/title_activity_gateway" >
+        </activity>
+        
+    </application>
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    android:orientation="vertical" >
+        
+   	<Button
+   	    android:id="@+id/noticeindex_goback"
+   	    android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:padding="7dp"
+        android:text=" 返 回 "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+	
+   	<ListView
+   	    android:id="@+id/news_list2_lvNews"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_above="@+id/noticeindex_goback"
+   	    android:scrollbars="none">
+	</ListView>
+	
+   	<ProgressBar
+	    android:id="@+id/pb1"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true" />
+
+</RelativeLayout>
